@@ -2,6 +2,8 @@
 <html>
 <head>
 	<title>Trivia Game</title>
+	<!--Custome Font-->
+	<link href="https://fonts.googleapis.com/css?family=Abhaya+Libre|Jacques+Francois" rel="stylesheet">
 	<!--bootstrap-->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
 		<!--My style-->
@@ -12,8 +14,25 @@
 </head>
 <body>
 	<div class="container-fluid">
+		<div class="row">
+			<div class="col-sm-1 col-md-2 col-lg-2 col-xl-2"></div>
+			<div class="col-xs-12 col-sm-10 col-md-8 col-lg-8 col-xl-8 text-center" id="titleDiv">
+				<img class="img-fluid" src="assets/images/title.png"/>
+				<h1>Trivia Question</h2>
+			</div>
+			<div class="col-sm-1 col-md-2 col-lg-2 col-xl-2"></div>
+		</div>
 		<div class="row" id="body">
-			
+			<div class="col-sm-1 col-md-2 col-lg-2 col-xl-2"></div>
+			<div class="col-xs-11 col-sm-9 col-md-7 col-lg-7 col-xl-7" id="contentDiv">
+				<div id="question" class="style"></div>
+				<form id="answers" class="style"></form>
+				<div id="results" class="style"></div>
+			</div>
+			<div class="col-xs-1 col-sm-1 col-md-1 col-lg-1 col-xl-1" id="timerDiv">
+				<div id="timer" class="h1">00	</div>
+			</div>
+			<div class="col-sm-1 col-md-2 col-lg-2 col-xl-2"></div>
 		</div>
 	</div>
 <script type="text/javascript" src="assets/javascript/app.js"></script>
